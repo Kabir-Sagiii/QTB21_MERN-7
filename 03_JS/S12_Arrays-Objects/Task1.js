@@ -17,3 +17,7 @@ console.log(users);
 //1.remove pune
 //2.add new city called banglore
 //3.replace hyd with secbd
+
+x++;
+
+++x;
