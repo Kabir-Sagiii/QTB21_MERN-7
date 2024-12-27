@@ -1,0 +1,32 @@
+.container {
+  width: 1000px;
+  height: 400px;
+  border: 3px solid green;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 10px;
+}
+.myFlex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flexitem1 {
+  width: 80px;
+  height: 80px;
+  background-color: lightsalmon;
+  order: 2;
+}
+.flexitem2 {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(157, 122, 255);
+  order: 1;
+}
+.flexitem3 {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(135, 255, 122);
+  order: 3;
+}
