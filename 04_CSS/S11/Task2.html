@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        width: 1200px;
+        height: 500px;
+        /* border: 3px solid red; */
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 400px);
+        grid-template-rows: 50px 200px 200px 50px;
+        gap: 10px;
+      }
+      .header {
+        background-color: orange;
+        grid-column: 1/4;
+        grid-row: 1/2;
+      }
+      .footer {
+        background-color: orange;
+        grid-column: 1/4;
+        grid-row: 4/5;
+      }
+      .sidebar {
+        grid-column: 1/2;
+        grid-row: 2/4;
+        background-image: url("https://d3h2k7ug3o5pb3.cloudfront.net/image/2020-04-30/6d3faf90-8a92-11ea-802b-b516aacb646f.png");
+        background-size: 100%;
+        background-position: center;
+      }
+      .content1 {
+        background-color: red;
+        grid-column: 2/4;
+        grid-row: 2/3;
+      }
+      .content2 {
+        grid-column: 2/3;
+        grid-row: 3/4;
+        padding: 10px;
+      }
+      .content3 {
+        background-color: violet;
+        grid-column: 3/4;
+        grid-row: 3/4;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- <div class="header">header</div> -->
+      <div class="sidebar"></div>
+      <div class="content1">
+        <img
+          src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/1d35c30ea9073b4b.jpg?q=20"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <div class="content2">
+        <h2>Trending Products</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+          unde odio ducimus quisquam voluptatibus eius, quam repellat est.
+          Aliquam porro magni ea dignissimos earum quos soluta recusandae
+          pariatur enim explicabo.
+        </p>
+      </div>
+      <div class="content3">
+        <img
+          src="https://rukminim2.flixcart.com/image/612/612/l2arp8w0/shoe/g/i/g/10-rng-2021-blu-orng-44-bruton-blue-orange-original-imagdzcpzhscxwhg.jpeg?q=70"
+          width="100%"
+          height="100%"
+        />
+      </div>
+      <!-- <div class="footer">footer</div> -->
+    </div>
+  </body>
+</html>
