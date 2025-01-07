@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function changeList() {
+        var li1 = document.getElementById("html");
+        li1.innerText = "CSharp";
+
+        var li2 = document.getElementById("css");
+        li2.innerText = "Asp.net MVC Core";
+      }
+
+      function f1() {
+        var li1 = document.getElementById("html");
+        li1.innerText = "HTML";
+
+        var li2 = document.getElementById("css");
+        li2.innerText = "CSS";
+      }
+    </script>
+  </head>
+  <body>
+    <ol onmouseenter="changeList()" onmouseleave="f1()">
+      <li id="html">html</li>
+      <li id="css">CSS</li>
+    </ol>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./index.css" />
+    <script>
+      function changeH2Content() {
+        var h2DomElement = document.querySelector("h2");
+        var pDomElement = document.querySelector("p");
+        var btnDomElement = document.querySelector("button");
+
+        for (let key in window) {
+          console.log(key);
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Document Object Model</h2>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+      saepe alias, voluptatem id amet odio ipsum eaque praesentium expedita.
+      Accusantium ipsum fugit facere sint dignissimos inventore soluta minus, et
+      dolores animi debitis! Laudantium dolore minus facere natus, quam velit
+      necessitatibus. Possimus fuga, optio aspernatur, ipsum id delectus,
+      repellendus dolores ipsa rem error quasi recusandae explicabo modi nemo!
+      Maiores est cum culpa ducimus repellendus explicabo, qui expedita quidem
+      voluptatibus nobis! In labore unde corporis! Sapiente facilis, provident
+      minus et dolores esse non. Sequi nihil ut repudiandae. Aut consequuntur
+      explicabo eos fuga incidunt dolores minus asperiores veritatis delectus.
+      Quas aperiam dicta sapiente?
+    </p>
+    <button onclick="changeH2Content()">Change Content</button>
+  </body>
+</html>
