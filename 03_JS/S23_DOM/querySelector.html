@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <script>
+      function changeContent() {
+        //code
+        var h2DomElement = document.querySelector("#h2");
+        h2DomElement.innerText = "JS is super easy ";
+        h2DomElement.style.color = "red";
+
+        var inputDomElement = document.querySelector("input");
+        inputDomElement.placeholder = "User Name";
+      }
+
+      function fnBlue() {
+        var h2DomElement = document.querySelector("#h2");
+        h2DomElement.style.color = "blue";
+      }
+
+      function fnRed() {
+        var h2DomElement = document.querySelector("#h2");
+        h2DomElement.style.color = "red";
+      }
+
+      function passwordBox() {
+        var inputDomElement = document.getElementById("box");
+        inputDomElement.type = "radio";
+      }
+    </script>
+  </head>
+  <body>
+    <h2 id="h2" class="title" onmouseenter="fnBlue()" onmouseleave="fnRed()">
+      QuerySelector
+    </h2>
+    <input id="box" type="text" placeholder="enter text" />
+    <button onclick="passwordBox()">Submit</button>
+  </body>
+</html>
