@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script>
+      function fn() {
+        var input = document.querySelector("input");
+        var p = document.querySelector("p");
+
+        var textBoxData = input.value;
+
+        p.innerText = textBoxData;
+      }
+    </script>
+  </head>
+  <body>
+    <h2>Task</h2>
+    <input type="text" placeholder="username" />
+    <button onclick="fn()">Submit</button>
+
+    <p id="username"></p>
+  </body>
+</html>

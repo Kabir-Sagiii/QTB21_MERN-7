@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function getDomElements() {
+        var collections = document.getElementsByTagName("h3");
+        console.log(collections);
+
+        for (let element of collections) {
+          element.style.color = "red";
+        }
+      }
+
+      //   function getDomElements() {
+      //     var pDom = document.getElementById("content");
+      //     console.log(pDom);
+      //     console.log("--------------------------------");
+      //     var domCollection = document.getElementsByClassName("heading");
+
+      //     var h2DomElement = domCollection[1];
+      //     h2DomElement.style.color = "red";
+      //   }
+    </script>
+  </head>
+
+  <body>
+    <h2 class="heading">DOM Manipulation</h2>
+    <h3 class="heading">Dom Element Concept</h3>
+    <h3 class="heading">Dom Element Concept</h3>
+    <h3 class="heading">Dom Element Concept</h3>
+    <h3 class="heading">Dom Element Concept</h3>
+    <h3 class="heading">Dom Element Concept</h3>
+    <h3 class="heading">Dom Element Concept</h3>
+    <h3 class="heading">Dom Element Concept</h3>
+    <h3 class="heading">Dom Element Concept</h3>
+    <p id="content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+      necessitatibus laudantium nemo sunt iure amet repellat facilis tenetur
+      eum. Provident, repudiandae iste veniam sed esse consectetur hic facilis
+      quisquam odio rem omnis a earum tenetur minima quo perferendis! Aliquid,
+      corporis illo quae odit nostrum vitae cupiditate accusantium, vel optio
+      itaque nam perspiciatis cum eveniet fugiat tempore sit a. Optio quaerat
+      tenetur qui exercitationem minima nostrum totam quis quos numquam! Sequi
+      enim eius magni dignissimos, quasi delectus fugit eos asperiores vel,
+      maxime minus reprehenderit quam. Blanditiis ullam accusamus rem id, natus
+      eveniet quas ratione ducimus veritatis, ex animi debitis. Voluptate,
+      natus?
+    </p>
+    <button onclick="getDomElements()">Submit</button>
+  </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function createDiv() {
+        var divDomElement = document.createElement("div");
+        divDomElement.innerText = "I am JS, easy to understand";
+        console.log(divDomElement);
+
+        //image
+        var imageDomElement = document.createElement("img");
+        imageDomElement.src =
+          "https://i0.wp.com/www.torontophotographerz.com/wp-content/uploads/2017/06/Business-portrait-23.jpg?fit=800%2C1200&ssl=1";
+        imageDomElement.width = "300";
+        imageDomElement.height = "300";
+
+        var bodyDomElement = document.querySelector("body");
+        bodyDomElement.appendChild(divDomElement);
+        bodyDomElement.appendChild(imageDomElement);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2 class="heading">DOM Manipulation</h2>
+
+    <p id="content">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+      necessitatibus laudantium nemo sunt iure amet repellat facilis tenetur
+      eum. Provident, repudiandae iste veniam sed esse consectetur hic facilis
+      quisquam odio rem omnis a earum tenetur minima quo perferendis! Aliquid,
+      corporis illo quae odit nostrum vitae cupiditate accusantium, vel optio
+      itaque nam perspiciatis cum eveniet fugiat tempore sit a. Optio quaerat
+      tenetur qui exercitationem minima nostrum totam quis quos numquam! Sequi
+      enim eius magni dignissimos, quasi delectus fugit eos asperiores vel,
+      maxime minus reprehenderit quam. Blanditiis ullam accusamus rem id, natus
+      eveniet quas ratione ducimus veritatis, ex animi debitis. Voluptate,
+      natus?
+    </p>
+    <button onclick="createDiv()">Submit</button>
+  </body>
+</html>
