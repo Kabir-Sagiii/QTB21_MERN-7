@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+      function removePara() {
+        var pDomElement = document.querySelector("p");
+
+        pDomElement.remove();
+      }
+
+      function createPara() {
+        var p = document.createElement("p");
+        p.innerText = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,deserunt obcaecati, voluptate soluta error consequatur corporis ducimus
+      consectetur veniam nisi esse cupiditate perspiciatis dolor sapiente
+      pariatur. Animi, earum repellendus facere numquam reiciendis expedita
+      autem consectetur cum atque, odio est hic sequi vel quia iure corporis
+      minus vitae ullam in. Quam adipisci cum rerum sit autem impedit obcaecati
+      aut porro quidem voluptate, modi eligendi odio accusantium molestias sunt
+      ab, repellendus accusamus recusandae sapiente cumque? Molestiae, expedita
+      accusantium. Pariatur esse illum numquam rerum! Cupiditate odit
+      consectetur in pariatur adipisci animi explicabo, ipsam reiciendis
+      delectus officia debitis nisi facilis tempora optio eaque sapiente.
+        `;
+
+        document.querySelector("h2").insertAdjacentElement("afterend", p);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Remove DOM element</h2>
+
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore,
+      deserunt obcaecati, voluptate soluta error consequatur corporis ducimus
+      consectetur veniam nisi esse cupiditate perspiciatis dolor sapiente
+      pariatur. Animi, earum repellendus facere numquam reiciendis expedita
+      autem consectetur cum atque, odio est hic sequi vel quia iure corporis
+      minus vitae ullam in. Quam adipisci cum rerum sit autem impedit obcaecati
+      aut porro quidem voluptate, modi eligendi odio accusantium molestias sunt
+      ab, repellendus accusamus recusandae sapiente cumque? Molestiae, expedita
+      accusantium. Pariatur esse illum numquam rerum! Cupiditate odit
+      consectetur in pariatur adipisci animi explicabo, ipsam reiciendis
+      delectus officia debitis nisi facilis tempora optio eaque sapiente.
+    </p>
+    <button onclick="createPara()">Add DOM Element</button>
+    <button onclick="removePara()">Remove Para</button>
+  </body>
+</html>
