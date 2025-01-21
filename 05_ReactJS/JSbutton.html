@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head> </head>
+
+  <body>
+    <div id="root"></div>
+
+    <script>
+      var btnDomElement = document.createElement("button");
+      btnDomElement.innerText = "Javascript Button";
+
+      document.getElementById("root").appendChild(btnDomElement);
+
+      function createList() {
+        var oldomelement = document.createElement("ol");
+        var li1 = document.createElement("li");
+        var li2 = document.createElement("li");
+        var li3 = document.createElement("li");
+        var li4 = document.createElement("li");
+
+        li1.innerText = "html";
+        li2.innerText = "css";
+        li3.innerText = "js";
+        li4.innerText = "react";
+
+        oldomelement.appendChild(li1);
+        oldomelement.appendChild(li2);
+        oldomelement.appendChild(li3);
+        oldomelement.appendChild(li4);
+
+        document.getElementById("root").appendChild(oldomelement);
+      }
+
+      btnDomElement.onclick = createList;
+
+      createList();
+      createList();
+      createList();
+      createList();
+      createList();
+      createList();
+      createList();
+      createList();
+      createList();
+      createList();
+    </script>
+  </body>
+</html>
