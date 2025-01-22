@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="rrr"></div>
+    <script>
+      var div = React.createElement(
+        "div",
+        { id: "title", className: "c1", name: "container" },
+        "React Looks Easy"
+      );
+
+      ReactDOM.render(div, document.getElementById("rrr"));
+    </script>
+  </body>
+</html>
