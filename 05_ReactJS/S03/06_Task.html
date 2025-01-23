@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script>
+      var li2 = React.createElement(
+        "li",
+        { style: { color: "red", backgroundColor: "black" } },
+        "HTML"
+      );
+      var li1 = React.createElement("li", { style: { color: "blue" } }, "CSS");
+      var ol = React.createElement("ol", null, [li1, li2]);
+
+      var div = React.createElement("div", null, ol);
+
+      ReactDOM.render(div, document.getElementById("root"));
+    </script>
+  </body>
+</html>
