@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #card {
+        width: 230px;
+        height: 380px;
+        box-shadow: 0 0 10px black;
+        text-align: center;
+      }
+      #cardContainer {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function createCard(username, url) {
+        return (
+          <div id="card">
+            <img src={url} width="100%" height="200" />
+            <h3> {username} </h3>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim
+              vitae placeat pariatur hic?
+            </p>
+            <button>Profile Details</button>
+          </div>
+        );
+      }
+
+      function container() {
+        return (
+          <div id="cardContainer">
+            {createCard(
+              "Rohan Verma",
+              "https://th.bing.com/th/id/OIP.4Sf5Qzlwrq-0iNoydcGW0wHaLH?rs=1&pid=ImgDetMain"
+            )}
+            {createCard(
+              "Sneha Sharma",
+              "https://static.vecteezy.com/system/resources/previews/025/474/309/non_2x/portrait-of-a-professional-woman-in-a-suit-business-woman-standing-in-an-office-ai-generated-photo.jpg"
+            )}
+            {createCard(
+              "Ajay Sharma",
+              "https://c.pxhere.com/photos/93/c7/businessman_man_portrait_male_costume_business_office_office_style-815849.jpg!d"
+            )}
+            {createCard(
+              "Riya Verma",
+              "https://i.pinimg.com/originals/b5/e6/d6/b5e6d6c39a235e9f7b2ec8ef12ee565d.jpg"
+            )}
+          </div>
+        );
+      }
+
+      ReactDOM.render(container(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

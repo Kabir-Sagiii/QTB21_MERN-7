@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function MyList() {
+        return (
+          <ol>
+            <li>Iphone 14 </li>
+            <li>Iphone 15</li>
+            <li>Iphone 16 Pro Max</li>
+            <li>Iphone 12 Plus</li>
+            <li>Iphone Mini</li>
+          </ol>
+        );
+      }
+
+      ReactDOM.render(<MyList />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

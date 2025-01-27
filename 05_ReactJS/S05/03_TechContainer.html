@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .techContainer {
+        box-shadow: 0 0 10px green;
+        margin: 30px auto;
+        width: 1000px;
+        padding: 30px;
+        background-color: black;
+        color: cornsilk;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function mycontainer(title) {
+        return (
+          <div className="techContainer">
+            <h1> {title} </h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              quae odio repudiandae necessitatibus corporis dolorum assumenda,
+              accusamus aperiam distinctio laborum! Impedit qui placeat mollitia
+              molestias obcaecati? Sequi odit et error, debitis aperiam voluptas
+              nulla, at adipisci delectus eum pariatur dolores fugit nemo quos
+              amet veniam. Odit illo hic aut ut ullam explicabo natus, expedita
+              officiis. Deleniti ratione aliquam voluptates, totam repellat id
+              illum praesentium laboriosam veniam similique perspiciatis dolore
+              harum adipisci fugiat, nemo ex dolorum fugit excepturi nam
+              quisquam quam! Mollitia nihil nemo blanditiis provident, qui
+              voluptas natus similique. Quos ullam earum fugiat enim aperiam
+              eveniet nam doloribus minima deserunt.{" "}
+            </p>
+          </div>
+        );
+      }
+      function app() {
+        return (
+          <div>
+            {mycontainer("HTML")}
+            {mycontainer("CSS")}
+            {mycontainer("JS")}
+            {mycontainer("REACT JS")}
+          </div>
+        );
+      }
+
+      ReactDOM.render(app(), document.getElementById("root"));
+    </script>
+  </body>
+</html>
