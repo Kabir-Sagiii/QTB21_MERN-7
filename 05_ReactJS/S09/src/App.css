@@ -1,0 +1,8 @@
+.app {
+  color: red;
+}
+.categories {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+}
