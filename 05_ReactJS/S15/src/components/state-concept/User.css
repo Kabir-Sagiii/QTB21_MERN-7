@@ -1,0 +1,11 @@
+.userContainer {
+  width: 800px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px red;
+  padding: 50px;
+  text-align: center;
+}
+button {
+  padding: 7px 30px;
+  margin-right: 20px;
+}
