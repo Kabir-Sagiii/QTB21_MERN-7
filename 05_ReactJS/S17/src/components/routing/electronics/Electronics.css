@@ -38,3 +38,34 @@ p {
   font-weight: bold;
   font-size: 17px;
 }
+.productData {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.productData .card {
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 0 10px green;
+  text-align: center;
+}
+.productData .card img,
+p,
+h3 {
+  margin-bottom: 10px;
+}
+.productData .card button {
+  margin-right: 20px;
+  padding: 7px 15px;
+  font-weight: bold;
+}
+.productData .card :nth-child(5) {
+  border: 2px solid green;
+  color: green;
+}
+.productData .card :nth-child(6) {
+  border: 2px solid blue;
+  color: blue;
+}

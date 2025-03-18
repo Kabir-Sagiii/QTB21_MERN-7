@@ -7,6 +7,7 @@ import Mens from "./components/routing/mens/Mens";
 import Womens from "./components/routing/womens/Womens";
 import Pagenotfound from "./components/routing/pagnotfound/Pagenotfound";
 import { Route, Routes } from "react-router-dom";
+import ProductDetails from "./components/routing/product-details/ProductDetails";
 function App() {
   return (
     <div>
@@ -17,6 +18,7 @@ function App() {
         <Route path={"/womens"} element={<Womens />} />
         <Route path={"/jewelery"} element={<Jewelery />} />
         <Route path={"/electronics"} element={<Electronics />} />
+        <Route path={"/productdetails"} element={<ProductDetails />} />
         <Route path={"*"} element={<Pagenotfound />} />
       </Routes>
     </div>
