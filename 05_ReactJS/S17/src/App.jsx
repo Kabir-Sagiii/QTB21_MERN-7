@@ -18,7 +18,9 @@ function App() {
         <Route path={"/womens"} element={<Womens />} />
         <Route path={"/jewelery"} element={<Jewelery />} />
         <Route path={"/electronics"} element={<Electronics />} />
-        <Route path={"/productdetails"} element={<ProductDetails />} />
+
+        <Route path={"/productdetails/:id"} element={<ProductDetails />} />
+
         <Route path={"*"} element={<Pagenotfound />} />
       </Routes>
     </div>

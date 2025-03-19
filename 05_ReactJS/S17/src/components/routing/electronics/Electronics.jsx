@@ -1,11 +1,13 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./Electronics.css";
 import { getProducts } from "./electronicsService";
 function Electronics() {
   const [electronics, setElectronics] = useState([]);
 
-  console.log(electronics);
+  useEffect(() => {
+    getProducts(setElectronics);
+  }, []);
 
   return (
     <div className="electronics">
@@ -24,16 +26,6 @@ function Electronics() {
         </section>
       </section>
 
-      <section className="temp">
-        <button
-          onClick={() => {
-            getProducts(setElectronics);
-          }}
-        >
-          Get Data
-        </button>
-      </section>
-
       <section className="productData">
         {electronics
           .filter((pro) => pro.category === "electronics")
@@ -44,9 +36,11 @@ function Electronics() {
                 <h3>{product.title}</h3>
                 <p style={{ color: "black" }}>${product.price}</p>
                 <p style={{ color: "black" }}>{product.category}</p>
-                <Link to="/productdetails">
+
+                <Link to={`/productdetails/${product.id}`}>
                   <button>Product Details</button>
                 </Link>
+
                 <button>Add to Cart</button>
               </div>
             );
