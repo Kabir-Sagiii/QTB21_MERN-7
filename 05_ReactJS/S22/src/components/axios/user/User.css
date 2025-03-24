@@ -1,0 +1,14 @@
+.usersDataContainer {
+  display: flex;
+  margin-top: 50px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+.card {
+  width: 250px;
+  height: 370px;
+  padding: 10px;
+  box-shadow: 0 0 10px red;
+  text-align: center;
+}
