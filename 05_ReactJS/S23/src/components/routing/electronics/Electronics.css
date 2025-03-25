@@ -1,0 +1,71 @@
+.electronics {
+}
+#electronicsBanner {
+  height: 270px;
+  width: 1200px;
+  margin: 30px auto;
+  box-shadow: 0 0 10px black;
+  background: url("https://img.freepik.com/premium-photo/collection-electronic-devices-black-background-generative-ai_893571-1990.jpg?w=740");
+
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.bgShadow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+}
+.bgShadow h1,
+p {
+  color: white;
+}
+.bgShadow h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+.temp {
+  margin-top: 20px;
+  text-align: center;
+}
+.temp button {
+  padding: 7px 20px;
+  color: green;
+  font-weight: bold;
+  font-size: 17px;
+}
+.productData {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.productData .card {
+  width: 300px;
+  padding: 20px;
+  box-shadow: 0 0 10px green;
+  text-align: center;
+}
+.productData .card img,
+p,
+h3 {
+  margin-bottom: 10px;
+}
+.productData .card button {
+  margin-right: 20px;
+  padding: 7px 15px;
+  font-weight: bold;
+}
+.productData .card :nth-child(5) {
+  border: 2px solid green;
+  color: green;
+}
+.productData .card :nth-child(6) {
+  border: 2px solid blue;
+  color: blue;
+}

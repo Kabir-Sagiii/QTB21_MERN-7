@@ -1,0 +1,56 @@
+.nav {
+  height: 80px;
+  background-color: black;
+  display: grid;
+  grid-template-columns: 30% 45% 25%;
+}
+.brandName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.categoriesName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brandName h1 {
+  font-size: 42px;
+  color: white;
+}
+.categoriesName a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 50px;
+}
+.icons a {
+  color: white;
+  text-decoration: none;
+
+  margin-right: 20px;
+}
+.icons a i {
+  font-size: 23px;
+}
+
+.categoriesName a:hover,
+.icons a:hover {
+  color: blue;
+}
+
+.icons button {
+  padding: 7px 30px;
+  border: none;
+  background: none;
+  color: white;
+  border: 2px solid red;
+  font-size: 15px;
+  font-weight: bold;
+}
